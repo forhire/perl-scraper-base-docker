@@ -7,4 +7,3 @@ RUN apt update\
     HTTP::Request::Common JSON SOAP::Lite WWW::Mechanize XML::LibXML XML::Simple XML::Twig \
  && apt-get autoremove -y --purge build-essential \
  && rm -fR /root/.cpanm || ( find /root/.cpanm/work -type f | xargs cat )
-
